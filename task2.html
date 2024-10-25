@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/task2.css">
+    <script src="js/task2.js" defer></script>
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="number1">Первое число:</label>
+                <input type="number" id="number1" required>
+            </div>
+            <div class="form-group">
+                <label for="number2">Второе число:</label>
+                <input type="number" id="number2" required>
+            </div>
+            <div class="form-group">
+                <label for="operation">Выберите операцию:</label>
+                <select id="operation" required>
+                    <option value="">--Выберите--</option>
+                    <option value="add">Сложение</option>
+                    <option value="subtract">Вычитание</option>
+                    <option value="multiply">Умножение</option>
+                    <option value="divide">Деление</option>
+                </select>
+            </div>
+            <button type="submit">Посчитать</button>
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+</body>
+</html>
